@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048小游戏</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>2048!</h1>
+      <button id="newgamebutton">New Game</button>
+      <!-- <a href="" id="newgamebutton">New Game</a> -->
+      <p>score:<span id="span">0</span></p>
+    </header>
+
+    <div class="grid-container">
+      <!-- 背景单元格 -->
+      <div class="grid-cell" id="grid-cell-0-0"></div>
+      <div class="grid-cell" id="grid-cell-0-1"></div>
+      <div class="grid-cell" id="grid-cell-0-2"></div>
+      <div class="grid-cell" id="grid-cell-0-3"></div>
+
+      <div class="grid-cell" id="grid-cell-1-0"></div>
+      <div class="grid-cell" id="grid-cell-1-1"></div>
+      <div class="grid-cell" id="grid-cell-1-2"></div>
+      <div class="grid-cell" id="grid-cell-1-3"></div>
+
+      <div class="grid-cell" id="grid-cell-2-0"></div>
+      <div class="grid-cell" id="grid-cell-2-1"></div>
+      <div class="grid-cell" id="grid-cell-2-2"></div>
+      <div class="grid-cell" id="grid-cell-2-3"></div>
+
+      <div class="grid-cell" id="grid-cell-3-0"></div>
+      <div class="grid-cell" id="grid-cell-3-1"></div>
+      <div class="grid-cell" id="grid-cell-3-2"></div>
+      <div class="grid-cell" id="grid-cell-3-3"></div>
+
+      <!-- 前景单元格 -->
+      <div id="c00" class="cell"></div>
+      <div id="c01" class="cell"></div>
+      <div id="c02" class="cell"></div>
+      <div id="c03" class="cell"></div>
+
+      <div id="c10" class="cell"></div>
+      <div id="c11" class="cell"></div>
+      <div id="c12" class="cell"></div>
+      <div id="c13" class="cell"></div>
+
+      <div id="c20" class="cell"></div>
+      <div id="c21" class="cell"></div>
+      <div id="c22" class="cell"></div>
+      <div id="c23" class="cell"></div>
+
+      <div id="c30" class="cell"></div>
+      <div id="c31" class="cell"></div>
+      <div id="c32" class="cell"></div>
+      <div id="c33" class="cell"></div>
+    </div>
+
+    <!-- 游戏结束界面 -->
+    <div id="gameOver">
+      <div>
+        <!--灰色半透明北景-->
+      </div>
+      <!--前景小窗-->
+      <p>Game Over!<br />
+        Score:<span id="finalScore"></span><br />
+        <a class="button" id="restart" style="font-size:30px;" onclick="game.start()">再来一次</a>
+      </p>
+    </div>
+    <script src="./js/fengzhuang.js"></script>
+    <script src="./js/index.js"></script>
+  </div>
+</body>
+
+</html>
